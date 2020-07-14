@@ -1,0 +1,179 @@
+/*default version */
+@font-face {
+  font-family: "Cera Round Pro DEMO";
+  src: url("../fonts/Cera-Pro/CeraRoundProDEMO-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Light version */
+@font-face {
+  font-family: "Cera Round Pro DEMO";
+  src: url("../fonts/Cera-Pro/CeraRoundProDEMO-Light.otf");
+  font-weight: light;
+  font-style: light;
+}
+
+/*Bold version */
+@font-face {
+  font-family: "Cera Round Pro DEMO";
+  src: url("../fonts/Cera-Pro/CeraRoundProDEMO-Bold.otf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffff;
+  --blue: #479ceb;
+  --lightBlue: #a3cef5;
+}
+
+body {
+  background: var(--white);
+  font-family: "Cera Round Pro DEMO";
+}
+
+/* Navbar */
+#mainNav {
+  background-color: var(--white);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 400;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.navbar__button {
+  background: var(--blue);
+  border: 2px solid var(--blue);
+  padding: 0.85rem 1.3rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--white) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar__button svg {
+  transform: scale(0.7);
+}
+
+.navbar__button:hover {
+  border: 2px solid var(--blue);
+  background: transparent;
+  color: var(--blue) !important;
+}
+
+.navbar__button svg path {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar__button:hover svg path {
+  stroke: var(--blue) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white-color);
+}
+
+#mainNav .navbar-brand {
+  transition: font-size 0.3s ease-in-out;
+}
+
+.nav-item {
+  margin: 1rem 0.9rem;
+}
+
+.navbar-light .navbar-brand {
+  transform: scale(0.7);
+  font-weight: 700;
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--white);
+  margin: 0 auto;
+  box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  transform: scale(1.4);
+}
+
+#mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand img {
+  height: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  #mainNav {
+    background-color: var(--white);
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .container-fluid {
+    max-width: 1400px;
+  }
+
+  .nav-item {
+    margin: 1rem 0.9rem;
+  }
+  .btn-navbar {
+    margin-left: 1rem;
+  }
+}
+/* Navbar*/
+
+/* Masthead */
+#masthead {
+  background-image: url("../images/background.png");
+  width: 100%;
+  height: 100vh;
+  max-height: 100vmax;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 89px;
+}
+
+#masthead .container {
+  height: 100%;
+}
+
+#masthead h1 {
+  padding-top: 6rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+#masthead p {
+  color: var(--lightBlue);
+  font-size: 1.4rem;
+  width: 65%;
+}
+
+#masthead .form-group {
+  border-radius: 5px;
+}
+
+.masthead__form {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  border: 2px solid var(--blue);
+}
+
+.masthead__form:hover {
+  background-color: transparent;
+  color: var(--white);
+
+  
+}
+
+/* Masthead */
