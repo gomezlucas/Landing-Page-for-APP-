@@ -1,7 +1,7 @@
 <?php
 
 //Conect Database 
-include('./config/db_connect.php');
+include('./db_connect.php');
 
 //write queries for all the subscribers
 $sql = 'SELECT id, email, created_at from subscriptions';

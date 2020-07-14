@@ -2,7 +2,7 @@
 
 
 //Conect Database 
-include('./config/db_connect.php');
+include('./db_connect.php');
 
 
 $errors = array('email' => '');
