@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/images/mobileLogo.svg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -14,13 +16,11 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top text-uppercase  " id="mainNav">
-        <div class="container-fluid navbar__container">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top text-uppercase  " id="mainNav">
+        <div class="container ">
             <a class="navbar-brand" href="#">
-                <span>
-                    <img class="navbar__logo" src="/assets/images/mobileLogo.svg" alt="">
-                    <img class="navbar__logo" src="/assets/images/RescueCALL.svg" alt="">
-                </span>
+                <img class="navbar__logo1" src="/assets/images/mobileLogo.svg" alt="">
+                <img class="navbar__logo2" src="/assets/images/RescueCALL.svg" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +30,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  ml-auto text-center ">
                     <li class="nav-item  ">
-                        <a class="navbar__button text-uppercase">
+                        <a href="#masthead" class="navbar__button text-uppercase">
                             <svg width="21" height="28" viewBox="0 0 21 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M16.4 2H4.4C3.07452 2 2 3.07452 2 4.4V23.6C2 24.9255 3.07452 26 4.4 26H16.4C17.7255 26 18.8 24.9255 18.8 23.6V4.4C18.8 3.07452 17.7255 2 16.4 2Z"
                                     stroke="#FAFDFE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.3999 21.2002H10.4119" stroke="#FAFDFE" stroke-width="4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             Get the app </a>
                     </li>
@@ -50,34 +52,121 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <h1 class="text-uppercase mb-5">Rescuing you from uncomfortable situations </h1>
-                    <p class="mb-3">Be the first to know when RescueCALL is available</p>
+                    <h1 class="text-uppercase mb-3 mb-sm-0 mb-lg-5 text-center text-md-left">Rescuing you from uncomfortable situations
+                    </h1>
+                    <p class="mb-4  text-center text-md-left ">Be the first to know when RescueCALL is available</p>
                     <form>
-                        <div class="form-row">
-                            <div class="col-9">
-                                <input type="text" class="form-control form-control-lg " placeholder="Email Address">
+                        <div class="form-row  ">
+                            <div class="col-12 col-lg-8">
+                                <input type="text" class="form-control form-control-lg  " placeholder="Email Address">
                             </div>
-                            <div class="col-3">
-                                <button class="btn masthead__form btn-lg btn-block text-uppercase "> Notify
-                                    me</button>
+                            <div class="col-12 col-lg-4 ">
+                                <button class="btn masthead__button btn-lg mt-2 mt-lg-0 btn-block   text-uppercase ">
+                                    Notify me</button>
                             </div>
                         </div>
                     </form>
-
-
                 </div>
-                <div class=" col-12 col-md-7">
-
+                <div class="col-12 col-md-5 masthead__images d-flex justify-content-end">
+                    <img class="img-fluid masthead__mobile" src="./assets/images/masthead/mobile.svg" alt="">
+                    <!-- 
+    <img class="masthead__ellipse" src="./assets/images/masthead/ellipse.png" alt="">
+-->
                 </div>
             </div>
 
         </div>
     </section>
 
-
     <!-- Masthead -->
 
+    <!-- Functions   -->
+    <section id="functions" class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-12 col-md-5  order-2  d-flex justify-content-center justify-content-md-start   align-items-center ">
+                    <img class="img-fluid functions__mobile" src="./assets/images/functions/mobile.svg" alt="">
 
+                </div>
+                <div class="col-12 col-md-7 d-flex align-items-center order-1 order-md-2 mb-0 mb-sm-5 ">
+                    <div>
+                        <span class="functions__title d-flex align-items-center justify-content-between">
+                            <img class="functions__separator" src="./assets/images/icons/separator.svg" alt="">
+                            <h2 class="d-inline text-center"> What Our AppDoes </h2>
+                            <img class="functions__separator" src="./assets/images/icons/separator.svg" alt="">
+                        </span>
+                        <div class="functions__list d-flex flex-column justify-content-around ">
+                            <div class="d-flex flex-row align-items-center  mb-4">
+                                <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
+                                <p class="mb-0 ">
+                                    Determines your state of comfort when you’re with a 2nd party.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center   mb-4">
+                                <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
+                                <p class="mb-0 ">
+                                    Makes an emergency call to your provided contact number to rescue you from the
+                                    discussion. </p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center  mb-4">
+                                <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
+                                <p class="mb-0 ">
+                                    Calls your line repeatedly for five consecutive times when you don’t decline or
+                                    accept
+                                    the emergency call. </p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center   mb-4">
+                                <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
+                                <p class="mb-0 ">
+                                    Determines your state of comfort when you’re with a 2nd party.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Functions  -->
+
+    <!-- Footer  -->
+    <footer id="footer" class="pt-4 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center justify-content-lg-start">
+                    <img  src="./assets/images/logoFooter.svg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6    text-center order-2 order-md-1 mt-0 mt-md-3 ">
+                    <ul class="footer__list d-flex justify-content-center justify-content-lg-start flex-wrap">
+                        <li class="text-uppercase mr-2"> copyright</li>
+                        <div class="mr-2">
+                            |
+                        </div>
+                        <li class="text-uppercase mr-2"> rescuecall 2020</li>
+                        <div class="mr-0 mr-sm-2 d-none d-sm-block">
+                            |
+                        </div>
+                        <li class="text-uppercase"> all right reserved</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6  align-self-end order-1 order-md-2 mt-3 mt-md-0">
+                    <ul class="footer__links d-flex  justify-content-center justify-content-lg-end">
+                        <li class="text-uppercase mr-2"> <a href="#">terms of service</a> </li>
+                        <div class="mr-2">
+                            |
+                        </div>
+                        <li class="text-uppercase mr-2"> <a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer  -->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

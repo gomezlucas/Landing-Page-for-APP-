@@ -32,6 +32,8 @@
   --white: #ffff;
   --blue: #479ceb;
   --lightBlue: #a3cef5;
+  --grey: #808080;
+  --text-blue: #0a345a;
 }
 
 body {
@@ -46,7 +48,16 @@ body {
   padding-bottom: 0.8rem;
   font-family: "Cera Round Pro DEMO";
   font-weight: 400;
+  box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
   transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.navbar__logo1 {
+  width: 2.5rem;
+}
+
+.navbar__logo2 {
+  width: 8rem;
 }
 
 .navbar__button {
@@ -61,13 +72,14 @@ body {
 }
 
 .navbar__button svg {
-  transform: scale(0.7);
+  width: 50px;
 }
 
 .navbar__button:hover {
   border: 2px solid var(--blue);
   background: transparent;
   color: var(--blue) !important;
+  text-decoration: none;
 }
 
 .navbar__button svg path {
@@ -76,6 +88,10 @@ body {
 
 .navbar__button:hover svg path {
   stroke: var(--blue) !important;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -88,11 +104,6 @@ body {
 
 .nav-item {
   margin: 1rem 0.9rem;
-}
-
-.navbar-light .navbar-brand {
-  transform: scale(0.7);
-  font-weight: 700;
 }
 
 #mainNav.navbar-shrink {
@@ -140,6 +151,7 @@ body {
   background-position: center center;
   background-size: cover;
   padding-top: 89px;
+  margin-bottom: 40rem;
 }
 
 #masthead .container {
@@ -150,30 +162,176 @@ body {
   padding-top: 6rem;
   color: var(--white);
   font-weight: bold;
+  font-size: 1.5rem;
+  }
+
+#masthead h1::after {
+  content: " .";
+  color: var(--blue);
+  font-size: 1.5rem;
 }
 
 #masthead p {
   color: var(--lightBlue);
-  font-size: 1.4rem;
-  width: 65%;
+  font-size: 1.3rem;
 }
 
 #masthead .form-group {
   border-radius: 5px;
 }
 
-.masthead__form {
+.masthead__button {
   background-color: var(--blue);
   color: var(--white);
   font-weight: bold;
   border: 2px solid var(--blue);
+  transition: all 0.5s ease-in-out;
 }
 
-.masthead__form:hover {
+.masthead__button:hover {
   background-color: transparent;
-  color: var(--white);
+  color: var(--blue);
+}
 
+.masthead__image {
+  position: relative;
+}
+
+.masthead__mobile {
+  padding-top: 2rem;
+  width: 90%;
+}
+
+.masthead__ellipse {
+  position: absolute;
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead {
+    margin-bottom: 6rem;
+  }
+
+  #masthead h1 {
+  font-size: 2.5rem;
+   }
+
+   #masthead h1::after {
+    font-size: 2.5rem;
+  }
   
+
+  #masthead p {
+    width: 60%;
+  }
 }
 
 /* Masthead */
+
+/* Functions */
+
+#functions {
+}
+
+.functions__title {
+  display: inline;
+  color: grey;
+}
+.functions__title h2 {
+  font-size: 1.7rem;
+}
+
+.functions__separator {
+  display: inline;
+  width: 3.5rem;
+}
+
+.functions__mobile{
+  width: 75%;
+}
+
+.functions__list {
+  color: var(--text-blue);
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+.functions__list img {
+  width: 50px;
+}
+@media screen and (min-width: 768px) {
+  .functions__list {
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+
+  .functions__separator {
+  width: 10rem;
+  }
+}
+/* Functions */
+
+/* Footer */
+#footer{
+  background: var(--blue);
+}
+
+#footer img{
+  width: 11rem;
+}
+
+.footer__list{
+  list-style-type: none;
+  color:  var(--lightBlue);
+  font-size: 0.7rem;
+}
+
+.footer__links {
+  list-style-type: none;
+  color: var(--white);
+}
+
+.footer__links a{
+color: var(--white);
+}
+
+.footer__links a:hover{
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px){
+  .footer__list{
+   font-size: 1rem ;
+   
+  }
+}
+
+/* Footer */
+
+
+
+/* Animations */
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
