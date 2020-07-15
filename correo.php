@@ -34,7 +34,7 @@ try {
     $mail->AltBody = 'You will receive an email when Our App is launched. Be Ready!';
 
     $mail->send();
-    echo 'Message has been sent';
+   // echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
