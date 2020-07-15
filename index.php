@@ -23,7 +23,6 @@ if (isset($_POST['submit'])) {
                 echo "Query error:" .  mysqli_error($conn);
             } else {
                 $ok = "Your email has been saved succesfully";
-                 mail('gomez.d.lucas@gmail.com', "contacto", "hola cmo va? ");
             }
         }
     }
