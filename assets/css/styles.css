@@ -88,22 +88,17 @@ body {
 }*/
 
 
-
-
-
-
+.navbar__logo2 path{
+  fill: var(--text-blue);
+}
 
 
 #mainNav.navbar-shrink .navbar__logo2 path{
   fill: var(--text-blue);
 }
 
-.navbar__button{
-  display: none;
- }
 
-#mainNav.navbar-shrink  .navbar__button {
-  display: block;
+  .navbar__button {
   background: var(--blue);
   border: 2px solid var(--blue);
   padding: 0.85rem 1.3rem;
@@ -112,6 +107,10 @@ body {
   cursor: pointer;
   color: var(--white) !important;
   transition: all 0.5s ease-in-out;
+}
+
+#mainNav.navbar-shrink .navbar__button{
+  display: block
 }
 
 #mainNav.navbar-shrink  .navbar__button svg {
@@ -144,6 +143,10 @@ body {
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   
+  .navbar__logo2 path{
+    fill: var(--white);
+  }
+
   #mainNav .container-fluid {
      max-width: 1400px;
   }
@@ -152,6 +155,10 @@ body {
     margin-left: 1rem;
    }
 
+   .navbar__button{
+    display: none;
+   }
+  
   
   
 }
