@@ -22,6 +22,14 @@
   font-style: bold;
 }
 
+/*Bold version */
+@font-face {
+  font-family: "Cera Round Pro DEMO";
+  src: url("../fonts/Cera-Pro/CeraRoundProDEMO-Medium.otf");
+  font-weight: medium;
+  font-style: medium;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +42,27 @@
   --lightBlue: #a3cef5;
   --grey: #808080;
   --text-blue: #0a345a;
+  --sneakBackground: #03101b;
 }
 
 body {
   background: var(--white);
   font-family: "Cera Round Pro DEMO";
 }
+
+/* General */
+
+.separator {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .separator {
+    width: 10rem;
+  }
+}
+
+/* General */
 
 /* Navbar */
 #mainNav {
@@ -48,7 +71,7 @@ body {
   padding-bottom: 2rem;
   font-family: "Cera Round Pro DEMO";
   font-weight: 400;
-   transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 }
 
 .navbar__logo1 {
@@ -57,9 +80,8 @@ body {
 
 .navbar__logo2 {
   width: 8rem;
- }
+}
 
- 
 .navbar-dark .navbar-nav .nav-link {
   color: var(--white-color);
 }
@@ -67,7 +89,6 @@ body {
 #mainNav .navbar-brand {
   transition: font-size 0.3s ease-in-out;
 }
-
 
 #mainNav.navbar-shrink {
   padding-top: 0.5rem;
@@ -87,18 +108,15 @@ body {
   height: 1.5rem;
 }*/
 
-
-.navbar__logo2 path{
+.navbar__logo2 path {
   fill: var(--text-blue);
 }
 
-
-#mainNav.navbar-shrink .navbar__logo2 path{
+#mainNav.navbar-shrink .navbar__logo2 path {
   fill: var(--text-blue);
 }
 
-
-  .navbar__button {
+.navbar__button {
   background: var(--blue);
   border: 2px solid var(--blue);
   padding: 0.85rem 1.3rem;
@@ -109,26 +127,26 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-#mainNav.navbar-shrink .navbar__button{
-  display: block
+#mainNav.navbar-shrink .navbar__button {
+  display: block;
 }
 
-#mainNav.navbar-shrink  .navbar__button svg {
+#mainNav.navbar-shrink .navbar__button svg {
   width: 50px;
 }
 
-#mainNav.navbar-shrink  .navbar__button:hover {
+#mainNav.navbar-shrink .navbar__button:hover {
   border: 2px solid var(--blue);
   background: transparent;
   color: var(--blue) !important;
   text-decoration: none;
 }
 
-#mainNav.navbar-shrink  .navbar__button svg path {
+#mainNav.navbar-shrink .navbar__button svg path {
   transition: all 0.5s ease-in-out;
 }
 
-#mainNav.navbar-shrink  .navbar__button:hover svg path {
+#mainNav.navbar-shrink .navbar__button:hover svg path {
   stroke: var(--blue) !important;
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
@@ -136,31 +154,27 @@ body {
   perspective: 1000px;
 }
 
-
 @media screen and (min-width: 968px) {
   #mainNav {
-    background-color:transparent;
+    background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
-  
-  .navbar__logo2 path{
+
+  .navbar__logo2 path {
     fill: var(--white);
   }
 
   #mainNav .container-fluid {
-     max-width: 1400px;
+    max-width: 1400px;
   }
 
   .btn-navbar {
     margin-left: 1rem;
-   }
+  }
 
-   .navbar__button{
+  .navbar__button {
     display: none;
-   }
-  
-  
-  
+  }
 }
 /* Navbar*/
 
@@ -174,7 +188,7 @@ body {
   background-position: center center;
   background-size: cover;
   padding-top: 89px;
-  margin-bottom: 35rem;
+  margin-bottom: 20rem;
 }
 
 #masthead .container {
@@ -186,7 +200,7 @@ body {
   color: var(--white);
   font-weight: bold;
   font-size: 1.5rem;
-  }
+}
 
 #masthead h1::after {
   content: " .";
@@ -230,19 +244,24 @@ body {
   width: 200px;
 }
 
+@media screen and (min-width: 470px) {
+  #masthead {
+    margin-bottom: 25rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #masthead {
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
   }
 
   #masthead h1 {
-  font-size: 2.5rem;
-   }
-
-   #masthead h1::after {
     font-size: 2.5rem;
   }
-  
+
+  #masthead h1::after {
+    font-size: 2.5rem;
+  }
 
   #masthead p {
     width: 60%;
@@ -253,7 +272,9 @@ body {
 
 /* Functions */
 
-#functions {
+#functions p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
 }
 
 .functions__title {
@@ -264,49 +285,118 @@ body {
   font-size: 1.7rem;
 }
 
-.functions__separator {
-  display: inline;
-  width: 3.5rem;
-}
-
-.functions__mobile{
+.functions__mobile {
   width: 75%;
 }
 
-.functions__list {
-  color: var(--text-blue);
-  font-size: 1rem;
-  font-weight: bold;
-  
+/* Functions */
+
+/* Options */
+#options {
+  background: var(--text-blue);
+  color: var(--white);
 }
 
-.functions__list img {
+.options__title {
+  display: inline;
+  color: var(--lightBlue);
+}
+.options__title h2 {
+  font-size: 1.7rem;
+}
+
+.options__list {
+  list-style-type: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: medium;
+}
+
+.options__list img {
   width: 50px;
 }
+
+.blue__color {
+  color: var(--blue);
+}
+
 @media screen and (min-width: 768px) {
-  .functions__list {
+  .options__list {
     line-height: 1.8;
     font-size: 1.2rem;
   }
+}
 
-  .functions__separator {
-  width: 10rem;
+/* Options */
+
+/* Sneak Peek */
+#sneakpeek {
+  background: var(--sneakBackground);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 500px;
+  padding: 2rem !important;
+}
+
+.swiper-slide img {
+width: 70%;
+opacity: 1;
+}
+
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 0;
+   opacity: .2;
+}
+
+.swiper-pagination-bullet-active{
+background: var(--white);
+opacity: 0.7;
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .swiper-slide img {
+    width: 80%;
+    opacity: 0.5;
+  }
+
+  
+  .swiper-slide-next img {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet {
+    width: 50px;
   }
 }
-/* Functions */
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--lightBlue) !important;
+}
+
+/* Sneak Peek */
 
 /* Footer */
-#footer{
+#footer {
   background: var(--blue);
 }
 
-#footer img{
+#footer img {
   width: 11rem;
 }
 
-.footer__list{
+.footer__list {
   list-style-type: none;
-  color:  var(--lightBlue);
+  color: var(--lightBlue);
   font-size: 0.7rem;
 }
 
@@ -315,25 +405,22 @@ body {
   color: var(--white);
 }
 
-.footer__links a{
-color: var(--white);
+.footer__links a {
+  color: var(--white);
 }
 
-.footer__links a:hover{
+.footer__links a:hover {
   text-decoration: none;
   opacity: 0.7;
 }
 
-@media screen and (min-width: 768px){
-  .footer__list{
-   font-size: 1rem ;
-   
+@media screen and (min-width: 768px) {
+  .footer__list {
+    font-size: 1rem;
   }
 }
 
 /* Footer */
-
-
 
 /* Animations */
 @keyframes shake {

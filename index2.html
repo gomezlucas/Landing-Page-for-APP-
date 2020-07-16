@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title> RescueCall | Coming Soon </title>
@@ -111,7 +113,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-12 col-md-5 masthead__images d-flex justify-content-end">
+                <div class="col-9 col-md-5 masthead__images d-flex justify-content-end mx-auto">
                     <img class="img-fluid masthead__mobile" src="./assets/images/masthead/mobile.png" alt="">
                     <!-- 
     <img class="masthead__ellipse" src="./assets/images/masthead/ellipse.png" alt="">
@@ -124,47 +126,112 @@
 
     <!-- Masthead -->
 
-    <!-- Functions   -->
+    <!-- Functions -->
     <section id="functions" class="mb-5">
+        <span class="functions__title d-flex align-items-center justify-content-center mb-0 mb-lg-5">
+            <img class="separator" src="./assets/images/icons/separator.svg" alt="">
+            <h2 class="d-inline text-center "> What Our App Does </h2>
+            <img class="separator" src="./assets/images/icons/separator.svg" alt="">
+        </span>
         <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-4 ">
+                    <div class="row text-left text-lg-right mb-4">
+                        <div class="col-9 order-2 order-lg-1 align-self-center">
+                            <p> Calls your line repeatedly for five consecutive times when you don’t decline or accept
+                                the emergency call</p>
+                        </div>
+                        <div class="col-3 order-1 order-lg-2">
+                            <img class="mr-4" src="./assets/images/icons/callIcon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row text-left text-lg-right mb-4 mb-lg-0">
+                        <div class="col-9 order-2 order-lg-1 align-self-center">
+                            <p> Calls the person closest to you to alert them of the danger you might be in.</p>
+                        </div>
+                        <div class="col-3 order-1 order-lg-2 ">
+                            <img class="mr-4" src="./assets/images/icons/alertIcon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-6 col-sm-6 col-md-6 col-lg-4  mx-auto  d-flex justify-content-center align-items-center mb-4 mb-lg-0 ">
+                    <img class="img-fluid functions__mobile" src="./assets/images/functions/mobile.svg" alt="">
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="row text-left mb-4  mb-lg-5">
+                        <div class="col-3">
+                            <img class="mr-4" src="./assets/images/icons/comfortIcon.svg" alt="">
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <p> Determines your state of comfort when you’re with a 2nd party.</p>
+                        </div>
+                    </div>
+                    <div class="row text-left ">
+                        <div class="col-3">
+                            <img class="mr-4" src="./assets/images/icons/emergencyIcon.svg" alt="">
+                        </div>
+                        <div class="col-9  align-self-center">
+                            <p> Makes an emergency call to your provided contact number to rescue you from the situation
+                                or discussion.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Functions  -->
+
+
+
+    <!-- Options   -->
+    <section id="options" class=" py-5">
+        <div class="container">
+            <span class="options__title d-flex align-items-center justify-content-center mb-0 mb-lg-5">
+                <img class="separator" src="./assets/images/icons/separator.svg" alt="">
+                <h2 class="d-inline text-center"> Safety And Comfort First! </h2>
+                <img class="separator" src="./assets/images/icons/separator.svg" alt="">
+            </span>
             <div class="row">
                 <div
                     class="col-12 col-md-5  order-2  d-flex justify-content-center justify-content-md-start   align-items-center ">
-                    <img class="img-fluid functions__mobile" src="./assets/images/functions/mobile.svg" alt="">
-
+                    <img class="img-fluid options__mobile" src="./assets/images/options/mobile.svg" alt="">
                 </div>
                 <div class="col-12 col-md-7 d-flex align-items-center order-1 order-md-2 mb-0 mb-sm-5 ">
                     <div>
-                        <span class="functions__title d-flex align-items-center justify-content-between">
-                            <img class="functions__separator" src="./assets/images/icons/separator.svg" alt="">
-                            <h2 class="d-inline text-center"> What Our AppDoes </h2>
-                            <img class="functions__separator" src="./assets/images/icons/separator.svg" alt="">
-                        </span>
-                        <div class="functions__list d-flex flex-column justify-content-around ">
+                        <div class="options__list d-flex flex-column justify-content-around ">
                             <div class="d-flex flex-row align-items-center  mb-4">
                                 <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
                                 <p class="mb-0 ">
-                                    Determines your state of comfort when you’re with a 2nd party.
+                                    <span class="blue__color"> Customize </span> emergency informations to suit you.
                                 </p>
                             </div>
                             <div class="d-flex flex-row align-items-center   mb-4">
                                 <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
                                 <p class="mb-0 ">
-                                    Makes an emergency call to your provided contact number to rescue you from the
-                                    discussion. </p>
+                                    Include top two <span class="blue__color">emergency numbers</span> that RescueCall
+                                    will alert incase of emergency
+                                    situations. </p>
                             </div>
                             <div class="d-flex flex-row align-items-center  mb-4">
                                 <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
                                 <p class="mb-0 ">
-                                    Calls your line repeatedly for five consecutive times when you don’t decline or
-                                    accept
-                                    the emergency call. </p>
+                                    Pick out how you <span class="blue__color">feel</span> and <span
+                                        class="blue__color">act</span> when you’re uncomfortable from a <span
+                                        class="blue__color">variety</span> of <span class="blue__color">options</span>.
+                                </p>
                             </div>
                             <div class="d-flex flex-row align-items-center   mb-4">
                                 <img class="mr-4" src="./assets/images/icons/check.svg" alt="">
                                 <p class="mb-0 ">
-                                    Determines your state of comfort when you’re with a 2nd party.
-                                </p>
+                                    <span class="blue__color">Accept</span>, <span class="blue__color">decline</span> or
+                                    <span class="blue__color">alert</span> your emergency numbers when RescueCall senses
+                                    your
+                                    discomfort. </p>
                             </div>
                         </div>
                     </div>
@@ -172,10 +239,65 @@
             </div>
     </section>
 
-    <!-- Functions  -->
+    <!-- Options  -->
+
+    <!-- Sneak Peek  -->
+    <section id="sneakpeek" class="py-5">
+        <span class="options__title d-flex align-items-center justify-content-center mb-0">
+            <img class="separator" src="./assets/images/icons/separator.svg" alt="">
+            <h2 class="d-inline text-center"> Sneak Peek </h2>
+            <img class="separator" src="./assets/images/icons/separator.svg" alt="">
+        </span>
+
+        <!-- Slider main container -->
+        <div class="swiper-container" data-aos="fade-up" data-aos-duration="2000">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide d-flex align-items-center">
+                    <div class="sneakpeek__card d-flex ">
+                        <img class="mx-auto"  src="./assets/images/sneekpeak/a.png" alt="">
+                     </div>
+                </div>
+                <div class="swiper-slide d-flex align-items-center">
+                    <div class="sneakpeek__card d-flex ">
+                        <img class="mx-auto" src="./assets/images/sneekpeak/b.png" alt="">
+                     </div>
+                </div>
+                <div class="swiper-slide d-flex align-items-center">
+                    <div class="sneakpeek__card d-flex">
+                        <img class="mx-auto"  src="./assets/images/sneekpeak/c.png" alt="">
+                     </div>
+                </div>
+                <div class="swiper-slide d-flex align-items-center">
+                    <div class="sneakpeek__card d-flex">
+                        <img class="mx-auto"  src="./assets/images/sneekpeak/d.png" alt="">
+                     </div>
+                </div>
+                <div class="swiper-slide d-flex align-items-center">
+                    <div class="sneakpeek__card d-flex">
+                        <img class="mx-auto"  src="./assets/images/sneekpeak/f.png" alt="">
+                     </div>
+                </div>
+                <div class="swiper-slide d-flex align-items-center">
+                    <div class="sneakpeek__card d-flex">
+                        <img class="mx-auto"  src="./assets/images/sneekpeak/g.png" alt="">
+                     </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </section>
+
+    <!-- Sneak Peek  -->
 
     <!-- Footer  -->
-    <footer id="footer" class="pt-4 mt-3">
+    <footer id="footer" class="pt-4 ">
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center justify-content-lg-start">
@@ -222,6 +344,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Custom Js -->
     <script src="./assets/js/app.js"></script>
 </body>
