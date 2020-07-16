@@ -57,13 +57,22 @@
         }
     })
 
-
     /* Light Box */
-
     lightbox.option({
         'showImageNumberLabel': false
     })
 
+
+    //initiliaze AOS
+    AOS.init(
+        {
+            offset: 100,
+            disable: function () {
+                var maxWidth = 650;
+                return window.innerWidth < maxWidth;
+            }
+        }
+    );
 
 })(jQuery); // End of use strict
 
