@@ -1,35 +1,4 @@
-<?php
-//Conect Database 
-include('./db_connect.php');
-
-$errors = array('email' => '');
-$email = '';
-$ok =  '';
-
-if (isset($_POST['submit'])) {
-    //check that the input is not empty 
-    if (empty($_POST['email'])) {
-        $errors['email'] = "the field can not be empty";
-    } else {
-        $email = $_POST['email'];
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors['email'] = "Please provide a valid email.";
-        } else {
-            $errors['email'] = '';
-            //Create query
-            $sql = "INSERT INTO subscriptions (email) VALUES ('$email')";
-            // Save to DB 
-            if (!mysqli_query($conn, $sql)) {
-                echo "Query error:" .  mysqli_error($conn);
-            } else {
-                $ok = "Your email has been saved succesfully";
-                include('./correo.php');
-            }
-        }
-    }
-}
-?>
-
+ 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -116,7 +85,8 @@ if (isset($_POST['submit'])) {
 
                 </div>
                 <div class="col-12 col-md-5 masthead__images d-flex justify-content-end">
-                <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt="">
+                    <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt="">
+
                 </div>
             </div>
 
@@ -253,32 +223,32 @@ if (isset($_POST['submit'])) {
                 <!-- Slides -->
                 <div class="swiper-slide d-flex align-items-center">
                     <div class="sneakpeek__card d-flex">
-                        <a href="./assets/images/sneekpeak/6-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/6.png" alt=""></a>
+                        <a href="./assets/images/sneekpeak/g.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/g.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
                     <div class="sneakpeek__card d-flex ">
-                        <a href="./assets/images/sneekpeak/1-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/1.png" alt=""></a>
+                        <a href="./assets/images/sneekpeak/a.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/a.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
                     <div class="sneakpeek__card d-flex ">
-                        <a href="./assets/images/sneekpeak/2-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/2.png" alt=""></a>
+                        <a href="./assets/images/sneekpeak/b.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/b.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
                     <div class="sneakpeek__card d-flex">
-                        <a href="./assets/images/sneekpeak/3-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/3.png" alt=""></a>
+                        <a href="./assets/images/sneekpeak/c.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/c.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
                     <div class="sneakpeek__card d-flex">
-                        <a href="./assets/images/sneekpeak/4-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/4.png" alt=""></a>
+                        <a href="./assets/images/sneekpeak/d.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/d.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
                     <div class="sneakpeek__card d-flex">
-                        <a href="./assets/images/sneekpeak/5-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/5.png" alt=""></a>
+                        <a href="./assets/images/sneekpeak/f.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/f.png" alt=""></a>
                     </div>
                 </div>
             </div>
