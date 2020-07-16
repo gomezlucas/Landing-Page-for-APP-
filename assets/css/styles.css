@@ -237,16 +237,30 @@ body {
 .masthead__mobile {
   padding-top: 2rem;
   width: 60%;
+  position: relative;
+  z-index: 1;
 }
 
-.masthead__ellipse {
-  position: absolute;
+.masthead__circle {
   width: 200px;
+  height: 200px;
+  top: -2%;
+  right: 0;
+  border-radius: 100%;
+  background: linear-gradient(230.31deg, #047f8b 5.71%, #a3cef5 92.29%);
+  z-index: 0;
 }
 
 @media screen and (min-width: 300px) {
   #masthead {
-    margin-bottom: 14rem;
+    margin-bottom: 17rem;
+  }
+
+  .masthead__circle {
+    width: 100px;
+    height: 100px;
+    top: 2%;
+    right: 17%;
   }
 }
 
@@ -254,16 +268,22 @@ body {
   #masthead {
     margin-bottom: 20rem;
   }
-  
+
   .masthead__mobile {
     padding-top: 2rem;
     width: 60%;
+  }
+  .masthead__circle {
+    width: 150px;
+    height: 150px;
+    top: 2%;
+    right: 17%;
   }
 }
 
 @media screen and (min-width: 550px) {
   #masthead {
-    margin-bottom: 18rem;
+    margin-bottom: 23rem;
   }
 }
 
@@ -288,6 +308,13 @@ body {
     padding-top: 2rem;
     width: 90%;
   }
+
+  .masthead__circle {
+    width: 200px;
+    height: 200px;
+    top: -2%;
+    right: 1%
+  }
 }
 
 /* Masthead */
@@ -307,8 +334,44 @@ body {
   font-size: 1.7rem;
 }
 
-.functions__mobile {
-  width: 75%;
+.function__imgContainer {
+  position: relative;
+}
+
+.functions__circle1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  top: -8%;
+  right: 0;
+  background: linear-gradient(230.31deg, #047f8b 5.71%, #a3cef5 92.29%);
+}
+
+.functions__circle2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  bottom: -8%;
+  left: 0;
+  background: linear-gradient(180deg, #8b0453 0%, #479ceb 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .functions__circle1,
+  .functions__circle2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .functions__circle1,
+  .functions__circle2 {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* Functions */
@@ -354,7 +417,6 @@ body {
 /* Sneak Peek */
 #sneakpeek {
   background: var(--sneakBackground);
- 
 }
 
 .swiper-container {
@@ -366,22 +428,21 @@ body {
 }
 
 .swiper-slide img {
-width: 70%;
-opacity: 1;
+  width: 70%;
+  opacity: 1;
 }
-
 
 .swiper-pagination-bullet {
   width: 25px;
   height: 8px;
   display: inline-block;
   border-radius: 0;
-   opacity: .2;
+  opacity: 0.2;
 }
 
-.swiper-pagination-bullet-active{
-background: var(--white);
-opacity: 0.7;
+.swiper-pagination-bullet-active {
+  background: var(--white);
+  opacity: 0.7;
 }
 
 .swiper-button-prev,
@@ -389,19 +450,16 @@ opacity: 0.7;
   color: var(--lightBlue) !important;
 }
 
-.lb-container img{
+.lb-container img {
   width: 100%;
 }
 
-
 @media screen and (min-width: 1024px) {
-  
   .swiper-slide img {
     width: 80%;
     opacity: 0.5;
   }
 
-  
   .swiper-slide-next img {
     width: 100%;
     opacity: 1;
@@ -411,8 +469,6 @@ opacity: 0.7;
     width: 50px;
   }
 }
-
-
 
 /* Sneak Peek */
 
@@ -454,6 +510,86 @@ opacity: 0.7;
 /* Footer */
 
 /* Animations */
+
+.animation__container {
+  position: relative;
+}
+
+.checked-1 {
+  position: absolute;
+  top: 35%;
+  left: 24%;
+  opacity: 0;
+  animation-name: check;
+  animation-duration: 5s;
+  animation-delay: -2.2s;
+  animation-iteration-count: infinite;
+}
+
+.checked-2 {
+  position: absolute;
+  top: 48%;
+  left: 65%;
+  animation-name: check;
+  animation-duration: 5s;
+  animation-delay: -0.6s;
+  opacity: 0;
+  animation-iteration-count: infinite;
+}
+
+.checked-3 {
+  position: absolute;
+  top: 61%;
+  left: 24%;
+  animation-name: check;
+  animation-duration: 5s;
+  opacity: 0;
+  animation-delay: -1.2s;
+  animation-iteration-count: infinite;
+}
+
+.checked-4 {
+  position: absolute;
+  top: 75%;
+  left: 24%;
+  animation-name: check;
+  animation-duration: 5s;
+  animation-delay: -1.8s;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 500px) {
+  .checked-1,
+  .checked-2,
+  .checked-3,
+  .checked-4 {
+    width: 15%;
+  }
+}
+
+@keyframes check2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes check {
+  0%,
+  20%,
+  100% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+}
+
+/* */
+
 @keyframes shake {
   10%,
   90% {

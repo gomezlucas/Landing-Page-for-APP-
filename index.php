@@ -115,8 +115,9 @@ if (isset($_POST['submit'])) {
                     </form>
 
                 </div>
-                <div class="col-12 col-md-5 masthead__images d-flex justify-content-end">
-                <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt="">
+                <div class="col-12 col-md-5 masthead__images d-flex justify-content-end position-relative">
+                    <div class="masthead__circle position-absolute"></div>
+                    <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt="">
                 </div>
             </div>
 
@@ -128,7 +129,7 @@ if (isset($_POST['submit'])) {
     <!-- Masthead -->
 
     <!-- Functions -->
-    <section id="functions" class="mb-5">
+    <section id="functions" class="mb-5 pb-5">
         <span class="functions__title d-flex align-items-center justify-content-center mb-0 mb-lg-5">
             <img class="separator" src="./assets/images/icons/separator.svg" alt="">
             <h2 class="d-inline text-center "> What Our App Does </h2>
@@ -156,8 +157,16 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4  mx-auto  d-flex justify-content-center align-items-center mb-4 mb-lg-0 ">
-                    <img class="img-fluid functions__mobile" src="./assets/images/functions/mobile.svg" alt="">
+                <div class="function__imgContainer col-6 col-sm-6 col-md-6 col-lg-4  mx-auto  d-flex justify-content-center align-items-center mb-4 mb-lg-0 ">
+                    <div class="functions__circle1"></div>
+                    <div class="functions__circle2"></div>
+                    <div class="animation__container">
+                        <img class="img-fluid functions__mobile" src="./assets/images/functions/5.png" alt="">
+                        <img class="checked-1" src="./assets/images/functions/checked.png" alt="">
+                        <img class="checked-2" src="./assets/images/functions/checked.png" alt="">
+                        <img class="checked-3" src="./assets/images/functions/checked.png" alt="">
+                        <img class="checked-4" src="./assets/images/functions/checked.png" alt="">
+                    </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
@@ -191,16 +200,16 @@ if (isset($_POST['submit'])) {
     <!-- Options   -->
     <section id="options" class=" py-5">
         <div class="container">
-            <span class="options__title d-flex align-items-center justify-content-center mb-0 mb-lg-5">
+            <span class="options__title d-flex align-items-center justify-content-center py-1 mb-0 mb-lg-5">
                 <img class="separator" src="./assets/images/icons/separator.svg" alt="">
                 <h2 class="d-inline text-center"> Safety And Comfort First! </h2>
                 <img class="separator" src="./assets/images/icons/separator.svg" alt="">
             </span>
-            <div class="row">
-                <div class="col-12 col-md-5  order-2  d-flex justify-content-center justify-content-md-start   align-items-center ">
-                    <img class="img-fluid options__mobile" src="./assets/images/options/mobile.svg" alt="">
+            <div class="row d-flex">
+                <div class="col-6 col-lg-4  order-2 d-flex mx-auto mb-5 ">
+                    <img class="img-fluid options__mobile " src="./assets/images/options/mobile.svg" alt="">
                 </div>
-                <div class="col-12 col-md-7 d-flex align-items-center order-1 order-md-2 mb-0 mb-sm-5 ">
+                <div class="col-12 col-lg-7 d-flex align-items-center order-1 order-md-2 mb-0 mb-sm-5 ">
                     <div>
                         <div class="options__list d-flex flex-column justify-content-around ">
                             <div class="d-flex flex-row align-items-center  mb-4">
