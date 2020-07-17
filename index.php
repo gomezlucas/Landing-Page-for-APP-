@@ -210,7 +210,7 @@ if (isset($_POST['submit'])) {
             <div class="row d-flex">
                 <div class="col-6 col-lg-4  order-2 d-flex mx-auto mb-5" data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="animation__container">
-                        <div class="options__text1"><p> Terrible Date </p> </div>
+                        <div class="options__text1"><p> Blind  Date </p> </div>
                         <div class="options__text2"><p> Say No More...  </p> </div>
                         <div class="options__white"> </div>
                         <img class="img-fluid options__mobile " src="./assets/images/options/mobile.svg" alt="">
