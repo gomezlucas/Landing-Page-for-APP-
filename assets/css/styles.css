@@ -50,13 +50,10 @@ html {
   --sneakBackground: #03101b;
 }
 
-
-
 body {
   background: var(--white);
   font-family: "Cera Round Pro DEMO";
   overflow-x: hidden;
-
 }
 
 /* General */
@@ -191,13 +188,11 @@ body {
 #masthead {
   background-image: url("../images/background.png");
   width: 100%;
-  height: 100vh;
-  max-height: 100vmax;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding-top: 89px;
-  margin-bottom: 20rem;
+  margin-bottom: 5rem;
 }
 
 #masthead .container {
@@ -250,7 +245,7 @@ body {
   z-index: 1;
 }
 
-.masthead__mobile:hover{
+.masthead__mobile:hover {
   overflow: auto;
   transform: scale(1.1);
 }
@@ -264,15 +259,12 @@ body {
   background: linear-gradient(230.31deg, #047f8b 5.71%, #a3cef5 92.29%);
   z-index: 0;
 }
-.masthead__mobile:hover{
+.masthead__mobile:hover {
   transform: scale(1.1);
 }
- 
 
 @media screen and (min-width: 300px) {
-  #masthead {
-    margin-bottom: 17rem;
-  }
+
 
   .masthead__circle {
     width: 100px;
@@ -283,9 +275,7 @@ body {
 }
 
 @media screen and (min-width: 470px) {
-  #masthead {
-    margin-bottom: 20rem;
-  }
+
 
   .masthead__mobile {
     padding-top: 2rem;
@@ -299,16 +289,14 @@ body {
   }
 }
 
-@media screen and (min-width: 550px) {
-  #masthead {
-    margin-bottom: 23rem;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
-  #masthead {
-    margin-bottom: 5rem;
+  #masthead{
+    height: 100vh;
   }
+
+
 
   #masthead h1 {
     font-size: 2.5rem;
@@ -331,7 +319,7 @@ body {
     width: 200px;
     height: 200px;
     top: -2%;
-    right: 1%
+    right: 1%;
   }
 }
 
@@ -441,10 +429,10 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 550px;
+  max-height: 550px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem !important;
+  padding: 0 2rem !important;
 }
 
 .swiper-slide img {
@@ -496,7 +484,6 @@ body {
 #footer {
   background: var(--text-blue);
   overflow: hidden;
-
 }
 
 #footer img {

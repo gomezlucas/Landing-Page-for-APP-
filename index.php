@@ -90,7 +90,7 @@ if (isset($_POST['submit'])) {
             <div class="row">
                 <div class="col-12 col-md-7">
                     <h1 class="text-uppercase mb-3 mb-sm-0 mb-lg-5 text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
-                        Rescuing you from uncomfortable situations
+                        Rescuing you from <span class="blue__color">uncomfortable</span> situations
                     </h1>
                     <p class="mb-4  text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">Be the first to know when RescueCALL is available</p>
                     <form action="index.php" method="POST"  data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">
