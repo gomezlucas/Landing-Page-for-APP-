@@ -246,7 +246,7 @@ body {
 }
 
 .masthead__mobile:hover {
-  overflow: auto;
+  overflow: initial;
   transform: scale(1.1);
 }
 
@@ -264,8 +264,6 @@ body {
 }
 
 @media screen and (min-width: 300px) {
-
-
   .masthead__circle {
     width: 100px;
     height: 100px;
@@ -275,8 +273,6 @@ body {
 }
 
 @media screen and (min-width: 470px) {
-
-
   .masthead__mobile {
     padding-top: 2rem;
     width: 60%;
@@ -289,14 +285,10 @@ body {
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
-  #masthead{
+  #masthead {
     height: 100vh;
   }
-
-
 
   #masthead h1 {
     font-size: 2.5rem;
@@ -401,7 +393,7 @@ body {
 .options__list {
   list-style-type: none;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: medium;
 }
 
@@ -462,6 +454,10 @@ body {
   width: 100%;
 }
 
+.swiper-slide {
+  height: initial;
+}
+
 @media screen and (min-width: 1024px) {
   .swiper-slide img {
     width: 80%;
@@ -508,6 +504,12 @@ body {
 .footer__links a:hover {
   text-decoration: none;
   opacity: 0.7;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__links {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -594,6 +596,79 @@ body {
 
   10% {
     opacity: 1;
+  }
+}
+
+/* */
+
+.options__text1 p {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  top: 27%;
+  left: 21%;
+  color: grey;
+  background: white;
+  position: absolute;
+}
+
+.options__white {
+  position: absolute;
+  background: var(--white);
+  width: 91px;
+  height: 20px;
+  top: 40%;
+  left: 21%;
+  z-index: 0;
+}
+
+.options__text2 p {
+  overflow: hidden;
+  border-right: 0.15em solid grey; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  top: 38%;
+  left: 21%;
+  color: grey;
+  background: var(--white);
+  animation: typing 3.5s steps(25, end) alternate infinite,
+    blink-caret 0.75s alternate infinite;
+  position: absolute;
+  z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+  .options__text1 p,
+  .options__text2 p {
+    font-size: 0.6rem;
+  }
+
+  .options__white {
+    top: 37%;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 44%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: grey;
   }
 }
 

@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  ml-auto text-center ">
                     <li class="nav-item mt-3 mt-md-0 ">
-                        <a class="nav-link navbar__button text-uppercase " href="#">
+                        <a class="nav-link navbar__button text-uppercase  " href="#">
                             <svg width="21" height="28" viewBox="0 0 21 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.4 2H4.4C3.07452 2 2 3.07452 2 4.4V23.6C2 24.9255 3.07452 26 4.4 26H16.4C17.7255 26 18.8 24.9255 18.8 23.6V4.4C18.8 3.07452 17.7255 2 16.4 2Z" stroke="#FAFDFE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M10.3999 21.2002H10.4119" stroke="#FAFDFE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -93,7 +93,7 @@ if (isset($_POST['submit'])) {
                         Rescuing you from <span class="blue__color">uncomfortable</span> situations
                     </h1>
                     <p class="mb-4  text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">Be the first to know when RescueCALL is available</p>
-                    <form action="index.php" method="POST"  data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">
+                    <form action="index.php" method="POST" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">
                         <div class="form-row  ">
                             <div class="col-12 col-lg-8">
                                 <input type="text" class="form-control form-control-lg 
@@ -119,7 +119,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="col-12 col-md-5 masthead__images d-flex justify-content-end position-relative">
                     <div class="masthead__circle position-absolute" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1500"></div>
-                    <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt=""  data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+                    <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt="" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1000">
                 </div>
             </div>
 
@@ -132,8 +132,7 @@ if (isset($_POST['submit'])) {
 
     <!-- Functions -->
     <section id="functions" class="mb-5 pb-5">
-        <span class="functions__title d-flex align-items-center justify-content-center mb-0 mb-lg-5"
-        data-aos="fade-up" data-aos-duration="2000" >
+        <span class="functions__title d-flex align-items-center justify-content-center mb-0 mb-lg-5" data-aos="fade-up" data-aos-duration="2000">
             <img class="separator" src="./assets/images/icons/separator.svg" alt="">
             <h2 class="d-inline text-center "> What Our App Does </h2>
             <img class="separator" src="./assets/images/icons/separator.svg" alt="">
@@ -141,8 +140,7 @@ if (isset($_POST['submit'])) {
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-lg-4 ">
-                    <div class="row text-left text-lg-right mb-4"  data-aos="fade-right" data-aos-duration="2000"
->
+                    <div class="row text-left text-lg-right mb-4" data-aos="fade-right" data-aos-duration="2000">
                         <div class="col-9 order-2 order-lg-1 align-self-center">
                             <p> Calls your line repeatedly for five consecutive times when you don’t decline or accept
                                 the emergency call</p>
@@ -151,7 +149,7 @@ if (isset($_POST['submit'])) {
                             <img class="mr-4" src="./assets/images/icons/callIcon.svg" alt="">
                         </div>
                     </div>
-                    <div class="row text-left text-lg-right mb-4 mb-lg-0 "  data-aos="fade-right" data-aos-duration="2000">
+                    <div class="row text-left text-lg-right mb-4 mb-lg-0 " data-aos="fade-right" data-aos-duration="2000">
                         <div class="col-9 order-2 order-lg-1 align-self-center">
                             <p> Calls the person closest to you to alert them of the danger you might be in.</p>
                         </div>
@@ -204,15 +202,19 @@ if (isset($_POST['submit'])) {
     <!-- Options   -->
     <section id="options" class=" py-5">
         <div class="container">
-            <span class="options__title d-flex align-items-center justify-content-center py-1 mb-0 mb-lg-5"
-            data-aos="fade-up" data-aos-duration="2000" >
+            <span class="options__title d-flex align-items-center justify-content-center py-1 mb-0 mb-lg-5" data-aos="fade-up" data-aos-duration="2000">
                 <img class="separator" src="./assets/images/icons/separator.svg" alt="">
                 <h2 class="d-inline text-center"> Safety And Comfort First! </h2>
                 <img class="separator" src="./assets/images/icons/separator.svg" alt="">
             </span>
             <div class="row d-flex">
-                <div class="col-6 col-lg-4  order-2 d-flex mx-auto mb-5"  data-aos="fade-up-right" data-aos-duration="2000">
-                    <img class="img-fluid options__mobile " src="./assets/images/options/mobile.svg" alt="">
+                <div class="col-6 col-lg-4  order-2 d-flex mx-auto mb-5" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="animation__container">
+                        <div class="options__text1"><p> Terrible Date </p> </div>
+                        <div class="options__text2"><p> Say No More...  </p> </div>
+                        <div class="options__white"> </div>
+                        <img class="img-fluid options__mobile " src="./assets/images/options/mobile.svg" alt="">
+                    </div>
                 </div>
                 <div class="col-12 col-lg-7 d-flex align-items-center order-1 order-md-2 mb-0 mb-sm-5 ">
                     <div data-aos="fade-up-left" data-aos-duration="2000">
@@ -254,9 +256,7 @@ if (isset($_POST['submit'])) {
 
     <!-- Sneak Peek  -->
     <section id="sneakpeek" class="py-5">
-        <span class="options__title d-flex align-items-center justify-content-center mb-0" 
-        data-aos="fade-up" data-aos-duration="2000"
-        >
+        <span class="options__title d-flex align-items-center justify-content-center mb-0" data-aos="fade-up" data-aos-duration="2000">
             <img class="separator" src="./assets/images/icons/separator.svg" alt="">
             <h2 class="d-inline text-center"> Sneak Peek </h2>
             <img class="separator" src="./assets/images/icons/separator.svg" alt="">
@@ -311,7 +311,7 @@ if (isset($_POST['submit'])) {
 
     <!-- Footer  -->
     <footer id="footer" class="pt-4 ">
-        <div class="container "  data-aos="fade-up" data-aos-duration="2000"   data-aos-offset="0">
+        <div class="container " data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <img src="./assets/images/logoFooter.svg" alt="">
@@ -321,9 +321,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-12 col-lg-6    text-center order-2 order-md-1 mt-0 mt-md-3 ">
                     <ul class="footer__list d-flex justify-content-center justify-content-lg-start flex-wrap">
                         <li class="text-uppercase mr-2"> copyright</li>
-                        <div class="mr-2">
-                            |
-                        </div>
+
                         <li class="text-uppercase mr-2"> rescuecall 2020</li>
                         <div class="mr-0 mr-sm-2 d-none d-sm-block">
                             |
