@@ -74,7 +74,23 @@
         }
     );
 
-        //
+    //autofocus
+    $("#email").focus();
+
+ 
+    $(nav__button).click(function () {
+        console.log('entrooo')
+        $("#email").focus();
+        $(".masthead__comming").addClass("showmsg");
+
+        setTimeout(function(){ 
+            $(".masthead__comming").removeClass("showmsg");
+         }, 5000);
+
+
+    })
+
+
 
 
 

@@ -195,6 +195,9 @@ body {
   margin-bottom: 5rem;
 }
 
+
+
+
 #masthead .container {
   height: 100%;
 }
@@ -245,10 +248,7 @@ body {
   z-index: 1;
 }
 
-.masthead__mobile:hover {
-  overflow: initial;
-  transform: scale(1.1);
-}
+ 
 
 .masthead__circle {
   width: 200px;
@@ -259,9 +259,26 @@ body {
   background: linear-gradient(230.31deg, #047f8b 5.71%, #a3cef5 92.29%);
   z-index: 0;
 }
-.masthead__mobile:hover {
-  transform: scale(1.1);
+ 
+.masthead__comming{
+  opacity: 0;
+  font-size: 1.5rem;
 }
+
+.masthead__comming.showmsg{
+  opacity: 1 ;
+  color: var(--white);
+  animation:blinkingText 1.2s infinite;
+
+}
+@keyframes blinkingText{
+  0%{     color: var(--white);    }
+  49%{    color: var(--white); }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: var(--white);    }
+}
+
 
 @media screen and (min-width: 300px) {
   .masthead__circle {

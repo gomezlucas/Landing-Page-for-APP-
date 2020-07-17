@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  ml-auto text-center ">
                     <li class="nav-item mt-3 mt-md-0 ">
-                        <a class="nav-link navbar__button text-uppercase  " href="#">
+                        <a class="nav-link navbar__button text-uppercase" href="#" id="nav__button">
                             <svg width="21" height="28" viewBox="0 0 21 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.4 2H4.4C3.07452 2 2 3.07452 2 4.4V23.6C2 24.9255 3.07452 26 4.4 26H16.4C17.7255 26 18.8 24.9255 18.8 23.6V4.4C18.8 3.07452 17.7255 2 16.4 2Z" stroke="#FAFDFE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M10.3999 21.2002H10.4119" stroke="#FAFDFE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -89,14 +89,16 @@ if (isset($_POST['submit'])) {
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <h1 class="text-uppercase mb-3 mb-sm-0 mb-lg-5 text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
+                    <h1 class="text-uppercase mb-3 mb-sm-0 mb-lg-4 text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
                         Rescuing you from <span class="blue__color">uncomfortable</span> situations
                     </h1>
+                    <h5 class="masthead__comming text-center text-md-left"> COMING SOON </h5>
                     <p class="mb-4  text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">Be the first to know when RescueCALL is available</p>
                     <form action="index.php" method="POST" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">
                         <div class="form-row  ">
                             <div class="col-12 col-lg-8">
-                                <input type="text" class="form-control form-control-lg 
+                                
+                            <input type="text" class="form-control form-control-lg 
                                 <?php
                                 if ($errors['email']) {
                                     echo "is-invalid";
@@ -210,8 +212,12 @@ if (isset($_POST['submit'])) {
             <div class="row d-flex">
                 <div class="col-6 col-lg-4  order-2 d-flex mx-auto mb-5" data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="animation__container">
-                        <div class="options__text1"><p> Blind  Date </p> </div>
-                        <div class="options__text2"><p> Say No More...  </p> </div>
+                        <div class="options__text1">
+                            <p> Blind Date </p>
+                        </div>
+                        <div class="options__text2">
+                            <p> Say No More... </p>
+                        </div>
                         <div class="options__white"> </div>
                         <img class="img-fluid options__mobile " src="./assets/images/options/mobile.svg" alt="">
                     </div>
