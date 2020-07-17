@@ -16,7 +16,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                // Enable SMTP authentication
     $mail->Username   = 'app.rescuecall@gmail.com';          // SMTP username
-    $mail->Password   = 'asdfasdf40';                        // SMTP password
+    $mail->Password   = '1235456';                        // SMTP password
     $mail->SMTPSecure = 'tls';                               // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                 // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
