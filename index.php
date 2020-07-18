@@ -119,8 +119,8 @@ if (isset($_POST['submit'])) {
                     </form>
 
                 </div>
-                <div class="col-6 col-md-4 mx-auto masthead__images d-flex justify-content-end position-relative">
-                    <div class="masthead__circle position-absolute" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1500"></div>
+                <div class="col-6 col-md-4 ">
+                    <div class="masthead__circle " data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1500"></div>
                     <img class="img-fluid" src="./assets/images/masthead/mobile.png" alt="" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1000">
                 </div>
             </div>
