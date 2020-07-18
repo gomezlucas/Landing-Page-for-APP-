@@ -243,7 +243,7 @@ body {
 
 .masthead__mobile {
   padding-top: 2rem;
-  width: 60%;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -285,26 +285,26 @@ body {
     width: 100px;
     height: 100px;
     top: 2%;
-    right: 17%;
+    right: -5%;
   }
 }
 
 @media screen and (min-width: 470px) {
   .masthead__mobile {
     padding-top: 2rem;
-    width: 60%;
+    width: 100%;
   }
   .masthead__circle {
     width: 150px;
     height: 150px;
     top: 2%;
-    right: 17%;
+    right: -9%;
   }
 }
 
 @media screen and (min-width: 768px) {
   #masthead {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   #masthead h1 {
@@ -438,14 +438,14 @@ body {
 
 .swiper-container {
   width: 100%;
-  max-height: 550px;
+  max-height: 850px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem !important;
 }
 
 .swiper-slide img {
-  width: 70%;
+  width: 100%;
   opacity: 1;
 }
 

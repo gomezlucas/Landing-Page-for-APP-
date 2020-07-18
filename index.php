@@ -87,7 +87,7 @@ if (isset($_POST['submit'])) {
     <!-- Masthead -->
     <section id="masthead">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex">
                 <div class="col-12 col-md-7">
                     <h1 class="text-uppercase mb-3 mb-sm-0 mb-lg-4 text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
                         Rescuing you from <span class="blue__color">uncomfortable</span> situations
@@ -119,7 +119,7 @@ if (isset($_POST['submit'])) {
                     </form>
 
                 </div>
-                <div class="col-12 col-md-5 masthead__images d-flex justify-content-end position-relative">
+                <div class="col-6 col-md-5 mx-auto masthead__images d-flex justify-content-end position-relative">
                     <div class="masthead__circle position-absolute" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1500"></div>
                     <img class="mx-auto masthead__mobile" src="./assets/images/masthead/mobile.png" alt="" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1000">
                 </div>
