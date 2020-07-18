@@ -276,32 +276,32 @@ if (isset($_POST['submit'])) {
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide d-flex align-items-center">
-                    <div class="sneakpeek__card d-flex">
+                    <div class="sneakpeek__card ">
                         <a href="./assets/images/sneekpeak/6-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/6.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
-                    <div class="sneakpeek__card d-flex ">
+                    <div class="sneakpeek__card  ">
                         <a href="./assets/images/sneekpeak/1-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/1.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
-                    <div class="sneakpeek__card d-flex ">
+                    <div class="sneakpeek__card ">
                         <a href="./assets/images/sneekpeak/2-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
-                    <div class="sneakpeek__card d-flex">
+                    <div class="sneakpeek__card ">
                         <a href="./assets/images/sneekpeak/3-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/3.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
-                    <div class="sneakpeek__card d-flex">
+                    <div class="sneakpeek__card">
                         <a href="./assets/images/sneekpeak/4-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/4.png" alt=""></a>
                     </div>
                 </div>
                 <div class="swiper-slide d-flex align-items-center">
-                    <div class="sneakpeek__card d-flex">
+                    <div class="sneakpeek__card">
                         <a href="./assets/images/sneekpeak/5-big.png" data-lightbox="mygallery" class="d-flex"><img class="mx-auto" src="./assets/images/sneekpeak/5.png" alt=""></a>
                     </div>
                 </div>
