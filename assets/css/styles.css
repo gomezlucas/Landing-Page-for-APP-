@@ -243,10 +243,10 @@ body {
 }
 
 .masthead__circle {
-  width: 200px;
-  height: 200px;
-  top: -2%;
-  right: 0;
+    width: 150px;
+    height: 150px;
+    top: -8%;
+    right: -18%;
   border-radius: 100%;
   background: linear-gradient(230.31deg, #047f8b 5.71%, #a3cef5 92.29%);
   z-index: 0;
@@ -308,6 +308,14 @@ body {
   }
 }
 
+
+@media screen and (min-width:992px){
+  .masthead__circle {
+    width: 200px;
+    height: 200px;
+    top: -10%;
+    right: -14%;
+}
 
 
 
