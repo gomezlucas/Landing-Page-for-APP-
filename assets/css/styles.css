@@ -240,7 +240,6 @@ body {
 
 .masthead__mobile {
   padding-top: 2rem;
-  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -299,7 +298,6 @@ body {
 @media screen and (min-width: 470px) {
   .masthead__mobile {
     padding-top: 2rem;
-    width: 100%;
   }
   .masthead__circle {
     width: 150px;
@@ -328,7 +326,6 @@ body {
 
   .masthead__mobile {
     padding-top: 2rem;
-    width: 90%;
   }
 }
 
