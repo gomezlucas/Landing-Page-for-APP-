@@ -239,7 +239,7 @@ body {
 }
 
 .masthead__mobile {
-  padding-top: 2rem;
+  /*padding-top: 2rem;*/
   position: relative;
   z-index: 1;
 }
@@ -296,9 +296,9 @@ body {
 
 
 @media screen and (min-width: 470px) {
-  .masthead__mobile {
+  /*.masthead__mobile {
     padding-top: 2rem;
-  }
+  }*/
   .masthead__circle {
     width: 150px;
     height: 150px;
@@ -325,7 +325,7 @@ body {
   }
 
   .masthead__mobile {
-    padding-top: 2rem;
+  /*  padding-top: 2rem;*/
   }
 }
 
