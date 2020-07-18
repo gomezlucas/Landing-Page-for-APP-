@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) {
     <section id="masthead">
         <div class="container">
             <div class="row d-flex">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-lg-7">
                     <h1 class="text-uppercase mb-3 mb-sm-0 mb-lg-4 text-center text-md-left" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
                         Rescuing you from <span class="blue__color">uncomfortable</span> situations
                     </h1>
