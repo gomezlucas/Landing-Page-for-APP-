@@ -236,7 +236,8 @@ body {
 
 .masthead__image {
   z-index: 1;
-  position: relative;  }
+  position: relative; 
+ }
 
 .masthead__mobile {
   margin-top: 2rem;
@@ -265,6 +266,7 @@ body {
   color: var(--white);
   animation: blinkingText 1.2s infinite;
 }
+
 @keyframes blinkingText {
   0% {
     color: var(--white);
@@ -282,9 +284,6 @@ body {
     color: var(--white);
   }
 }
-
-
-
 
 
 
@@ -318,7 +317,7 @@ body {
     top: -10%;
     right: -14%;
 }
-
+}
 
 
 
