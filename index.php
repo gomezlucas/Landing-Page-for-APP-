@@ -97,8 +97,8 @@ if (isset($_POST['submit'])) {
                     <form action="index.php" method="POST" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800">
                         <div class="form-row  ">
                             <div class="col-12 col-lg-8">
-                                
-                            <input type="text" class="form-control form-control-lg 
+
+                                <input type="text" class="form-control form-control-lg 
                                 <?php
                                 if ($errors['email']) {
                                     echo "is-invalid";
@@ -119,9 +119,11 @@ if (isset($_POST['submit'])) {
                     </form>
 
                 </div>
-                <div class="col-6 col-md-4 ">
-                    <div class="masthead__circle " data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1500"></div>
-                    <img class="img-fluid" src="./assets/images/masthead/mobile.png" alt="" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+                <div class="col-6 col-md-4  mx-auto pt-5  ">
+                    <div class="position-relative">
+                        <div class="masthead__circle " data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1500"></div>
+                        <img class="img-fluid masthead__image" src="./assets/images/masthead/mobile.png" alt="" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+                    </div>
                 </div>
             </div>
 

@@ -235,13 +235,11 @@ body {
 }
 
 .masthead__image {
-  position: relative;
-}
+ }
 
 .masthead__mobile {
   margin-top: 2rem;
-  position: relative;
-  z-index: 1;
+   z-index: 1;
 }
 
 .masthead__circle {
@@ -252,6 +250,7 @@ body {
   border-radius: 100%;
   background: linear-gradient(230.31deg, #047f8b 5.71%, #a3cef5 92.29%);
   z-index: 0;
+  position: absolute;
 }
 
 .masthead__comming {
@@ -285,27 +284,7 @@ body {
 
 
 
-@media screen and (min-width: 300px) {
-  .masthead__circle {
-    width: 100px;
-    height: 100px;
-    top: 2%;
-    right: -5%;
-  }
-}
 
-
-@media screen and (min-width: 470px) {
-  .masthead__mobile {
-    margin-top: 2rem;
-  }
-  .masthead__circle {
-    width: 150px;
-    height: 150px;
-    top: 2%;
-    right: -9%;
-  }
-}
 
 @media screen and (min-width: 768px) {
   #masthead {
@@ -330,14 +309,7 @@ body {
 }
 
 
-@media screen and (min-width: 992px) {
-  .masthead__circle {
-    width: 200px;
-    height: 200px;
-    top: -2%;
-    right: 1%;
-  }
-}
+
 
 
 /* Masthead */
