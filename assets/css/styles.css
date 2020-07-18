@@ -633,7 +633,7 @@ body {
 .options__white {
   position: absolute;
   background: var(--white);
-  width: 91px;
+  width: 81px;
   height: 20px;
   top: 40%;
   left: 21%;
